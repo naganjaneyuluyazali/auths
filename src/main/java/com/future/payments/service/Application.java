@@ -4,9 +4,11 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
+
 import java.util.Arrays;
 
-@SpringBootApplication(scanBasePackages = {"com.future.payments.router", "com.future.payments.handler"})
+@SpringBootApplication(scanBasePackages = {"com.future.payments.router", "com.future.payments.handler",
+        "com.future.payments.exception", "com.future.payments.utils"})
 public class Application {
     public static void main(String... args){
         try {
